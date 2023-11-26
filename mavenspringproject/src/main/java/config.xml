@@ -10,9 +10,16 @@
     <!-- Define a bean for Student -->
     <bean id="student1" class="com.mavenspring.Student">
         <property name="studentId" value="22344"/>
+        <property name="studentName" value="Dummy Name"/>
+        <property name="studentAddress" value="Dummy Address"/>
+    </bean>
+    <!-- Define a bean for Student(creating an another object) -->
+    <bean id="student2" class="com.mavenspring.Student">
+        <property name="studentId" value="1924111295"/>
         <property name="studentName" value="MD Fasiuddin"/>
         <property name="studentAddress" value="Hyderabad"/>
     </bean>
-    
+    <!-- Define a bean for Student(creating an another object)using p schema -->
+    <bean id="student3" class="com.mavenspring.Student" p:studentId="12345" p:studentName="Any DummyName" p:studentAddress="Any Dummy Address" />
 </beans>
 
